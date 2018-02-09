@@ -2,9 +2,9 @@ function Sync-WebResources($configFilePath) {
 
   function Add-Crm-Sdk {
     # Load SDK assemblies
-    Add-Type -Path "$PSScriptRoot\Assemblies\Microsoft.Xrm.Sdk.dll";
-    Add-Type -Path "$PSScriptRoot\Assemblies\Microsoft.Xrm.Client.dll";
-    Add-Type -Path "$PSScriptRoot\Assemblies\Microsoft.Crm.Sdk.Proxy.dll";
+    Add-Type -Path ".\Assemblies\Microsoft.Xrm.Sdk.dll";
+    Add-Type -Path ".\Assemblies\Microsoft.Xrm.Client.dll";
+    Add-Type -Path ".\Assemblies\Microsoft.Crm.Sdk.Proxy.dll";
   }
 
   function Get-Base64 {
